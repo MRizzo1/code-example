@@ -6,8 +6,6 @@ import ElementService from "../services/element.service";
 import IElementData from "../types/element.type";
 import { Elements } from "./Elements";
 
-import "../assets/css/home.css";
-
 const Home = () => {
   const [elements, setElements] = useState<Array<IElementData>>([]);
   const [currentElement, setCurrentElement] = useState<IElementData | null>(
