@@ -1,0 +1,723 @@
+/*================================================
+Default CSS
+=================================================*/
+
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+    --fontFamily: "Work Sans", sans-serif;
+    --mainColor: #39a0c9;
+    --mainColor2: #46bff7;
+    --optionalColor: #666666;
+    --whiteColor: #ffffff;
+    --blackColor: #221638;
+    --fontSize: 15px;
+    --transition: 0.5s;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-size: var(--fontSize);
+    font-family: var(--fontFamily);
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+}
+
+a {
+    color: var(--blackColor);
+    -webkit-transition: var(--transition);
+    transition: var(--transition);
+    text-decoration: none;
+    outline: 0 !important;
+}
+
+a:hover {
+    color: var(--mainColor);
+    text-decoration: none;
+}
+
+:focus {
+    outline: 0 !important;
+}
+
+.d-table {
+    width: 100%;
+    height: 100%;
+}
+
+.d-table-cell {
+    vertical-align: middle;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+p {
+    color: var(--optionalColor);
+    font-size: var(--fontSize);
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+.ptb-100 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.pt-100 {
+    padding-top: 100px;
+}
+
+.pb-100 {
+    padding-bottom: 100px;
+}
+
+.ptb-70 {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.pt-70 {
+    padding-top: 70px;
+}
+
+.pb-70 {
+    padding-bottom: 70px;
+}
+
+.bg-f9f9f9 {
+    background-color: #f9f9f9;
+}
+
+.bg-f5f5f5 {
+    background-color: #f5f5f5;
+}
+
+.bg-main-color {
+    background-color: var(--mainColor2);
+}
+
+.bg-main-color .section-title p {
+    color: var(--blackColor);
+}
+
+
+/*section-title*/
+
+.section-title {
+    text-align: center;
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+}
+
+.section-title h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.section-title span {
+    color: var(--mainColor);
+}
+
+.section-title button {
+    margin-top: 15px;
+}
+
+
+/*================================================
+Listings Area CSS
+=================================================*/
+
+.listings-area button {
+    display: block;
+    width: 100%;
+    background-color: var(--mainColor);
+    border: none;
+    color: var(--whiteColor);
+    font-size: var(--fontSize);
+    font-weight: 600;
+    padding: 12px 25px;
+    border-radius: 30px;
+    -webkit-transition: var(--transition);
+    transition: var(--transition);
+}
+
+.listings-area button:hover {
+    background-color: var(--blackColor);
+    color: var(--whiteColor);
+}
+
+.listings-area .selected {
+    border: 1px solid var(--mainColor);
+    border-radius: 5px;
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+}
+
+.listings-area .selected h3 {
+    color: var(--mainColor);
+    margin-bottom: 12px;
+    font-size: 25px;
+}
+
+.listings-area .selected .selected-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.listings-area .selected .selected-content .edit .link {
+    display: block;
+    width: 100%;
+    background-color: var(--mainColor);
+    border: none;
+    color: var(--whiteColor);
+    font-size: var(--fontSize);
+    font-weight: 600;
+    padding: 12px 25px;
+    border-radius: 30px;
+    -webkit-transition: var(--transition);
+    transition: var(--transition);
+}
+
+.listings-area .selected .selected-content .edit .link:hover {
+    background-color: var(--blackColor);
+    color: var(--whiteColor);
+}
+
+.listings-area .selected .selected-content .selected-info {
+    width: 80%;
+}
+
+.listings-area .selected .selected-content .selected-info label {
+    color: var(--mainColor);
+    font-size: 20px;
+}
+
+.listings-area {
+    position: relative;
+    z-index: 1;
+}
+
+.listings-area .container {
+    padding: 0px 200px;
+}
+
+.single-listings-item {
+    margin-bottom: 30px;
+    border: 1px solid var(--mainColor);
+    border-radius: 5px;
+    background-color: var(--whiteColor);
+}
+
+.single-listings-item .listings-content {
+    padding: 45px 30px;
+}
+
+.single-listings-item .listings-content .status {
+    display: inline-block;
+    color: var(--whiteColor);
+    margin-bottom: 15px;
+    background-color: var(--mainColor);
+    border-radius: 30px;
+    padding: 4px 12px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.single-listings-item .listings-content h3 {
+    margin-bottom: 12px;
+    font-size: 20px;
+}
+
+
+/*================================================
+Banner Wraper CSS
+=================================================*/
+
+.banner-wrapper-area {
+    padding: 250px;
+    background-color: #9aaeb4;
+}
+
+.banner-wrapper-content {
+    max-width: 100%;
+}
+
+.banner-wrapper-content h1 {
+    font-size: 50px;
+    margin-bottom: 15px;
+    color: var(--whiteColor);
+}
+
+.banner-wrapper-content p {
+    line-height: initial;
+    font-size: 18px;
+    color: #eaeaea;
+    margin: 0;
+}
+
+.banner-wrapper-content .form {
+    margin-top: 40px;
+    background-color: var(--whiteColor);
+    -webkit-box-shadow: 5px 5px #46bff7;
+    box-shadow: 5px 5px #46bff7;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 12px;
+}
+
+.banner-wrapper-content .form .form-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px;
+}
+
+.banner-wrapper-content .form .form-group {
+    margin: 0;
+    position: relative;
+    border-right: 1px solid #46bff7;
+    margin-left: 12px;
+}
+
+.banner-wrapper-content .form .form-group.category-select {
+    border-right: none;
+    padding-right: 20px;
+}
+
+.banner-wrapper-content .form .form-group .form-control {
+    border: none !important;
+    color: var(--blackColor);
+    -webkit-box-shadow: unset !important;
+    box-shadow: unset !important;
+    background-color: transparent !important;
+    height: 60px;
+    line-height: 60px;
+    font-size: var(--fontSize);
+    font-weight: 400;
+    padding-top: 2px;
+    padding-bottom: 0;
+    padding-left: 30px;
+    padding-right: 15px;
+}
+
+.banner-wrapper-content .form .form-group .form-control::-webkit-input-placeholder {
+    -webkit-transition: var(--transition);
+    transition: var(--transition);
+    color: #666666;
+}
+
+.banner-wrapper-content .form .form-group .form-control:-ms-input-placeholder {
+    -webkit-transition: var(--transition);
+    transition: var(--transition);
+    color: #666666;
+}
+
+.banner-wrapper-content .form .form-group .form-control::-ms-input-placeholder {
+    -webkit-transition: var(--transition);
+    transition: var(--transition);
+    color: #666666;
+}
+
+.banner-wrapper-content .form .form-group .form-control::placeholder {
+    -webkit-transition: var(--transition);
+    transition: var(--transition);
+    color: #666666;
+}
+
+.banner-wrapper-content .form .form-group .form-control:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+.banner-wrapper-content .form .form-group .form-control:focus:-ms-input-placeholder {
+    color: transparent;
+}
+
+.banner-wrapper-content .form .form-group .form-control:focus::-ms-input-placeholder {
+    color: transparent;
+}
+
+.banner-wrapper-content .form .form-group .form-control:focus::placeholder {
+    color: transparent;
+}
+
+.banner-wrapper-content .form .col-lg-4 .form-group {
+    margin-left: 0;
+}
+
+.banner-wrapper-content .form .submit-btn {
+    padding-left: 5px;
+}
+
+.banner-wrapper-content .form .submit-btn button {
+    display: block;
+    width: 100%;
+    background-color: var(--mainColor);
+    border: none;
+    color: var(--whiteColor);
+    font-size: var(--fontSize);
+    font-weight: 600;
+    padding: 12px 15px;
+    border-radius: 5px;
+    -webkit-transition: var(--transition);
+    transition: var(--transition);
+}
+
+.banner-wrapper-content .form .submit-btn button:hover {
+    background-color: var(--blackColor);
+    color: var(--whiteColor);
+}
+
+
+/*================================================
+Add Element CSS
+=================================================*/
+
+.add-element-box {
+    margin-bottom: 30px;
+    background-color: var(--whiteColor);
+    -webkit-box-shadow: 1px 5px 24px 0 rgba(68, 102, 242, 0.05);
+    box-shadow: 1px 5px 24px 0 rgba(68, 102, 242, 0.05);
+    border-radius: 5px;
+    padding: 0 25px 0 25px;
+    min-height: 100vh
+}
+
+.add-element-box h3 {
+    padding: 20px 25px 19px;
+    border-bottom: 1px dashed #eeeeee;
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    margin-left: -25px;
+    margin-right: -25px;
+}
+
+.add-element-box .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-element-box .form-group {
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.add-element-box .form-group label {
+    display: block;
+    margin-bottom: 12px;
+    color: var(--blackColor);
+    position: relative;
+    padding-left: 25px;
+    font-weight: 500;
+}
+
+.add-element-box .form-group label span {
+    color: var(--optionalColor);
+    font-weight: 400;
+}
+
+.add-element-box .form-group .form-control {
+    height: 48px;
+    background: #f9f9f9 !important;
+    -webkit-transition: var(--transition);
+    transition: var(--transition);
+    border-radius: 5px;
+    border: 1px solid #e5e7f2 !important;
+    color: var(--blackColor) !important;
+    font-weight: 400;
+    font-size: var(--fontSize);
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.add-element-box .form-group .form-control::-webkit-input-placeholder {
+    -webkit-transition: var(--transition);
+    transition: var(--transition);
+    color: #7d93b2;
+}
+
+.add-element-box .form-group .form-control:-ms-input-placeholder {
+    -webkit-transition: var(--transition);
+    transition: var(--transition);
+    color: #7d93b2;
+}
+
+.add-element-box .form-group .form-control::-ms-input-placeholder {
+    -webkit-transition: var(--transition);
+    transition: var(--transition);
+    color: #7d93b2;
+}
+
+.add-element-box .form-group .form-control::placeholder {
+    -webkit-transition: var(--transition);
+    transition: var(--transition);
+    color: #7d93b2;
+}
+
+.add-element-box .form-group .form-control:focus {
+    border-color: var(--mainColor);
+}
+
+.add-element-box .form-group .form-control:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+.add-element-box .form-group .form-control:focus:-ms-input-placeholder {
+    color: transparent;
+}
+
+.add-element-box .form-group .form-control:focus::-ms-input-placeholder {
+    color: transparent;
+}
+
+.add-element-box .form-group .form-control:focus::placeholder {
+    color: transparent;
+}
+
+.add-element-box .form-group textarea.form-control {
+    padding-top: 15px;
+    height: auto;
+}
+
+.add-element-btn {
+    margin-bottom: 30px;
+}
+
+.add-element-btn button {
+    display: inline-block;
+    background-color: var(--mainColor);
+    color: var(--whiteColor);
+    padding: 12.5px 30px;
+    -webkit-box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+    border-radius: 5px;
+    -webkit-transition: var(--transition);
+    transition: var(--transition);
+    border: none;
+    font-size: var(--fontSize);
+    font-weight: 600;
+}
+
+.add-element-btn button:hover {
+    background-color: #3b99ca;
+    color: var(--whiteColor);
+}
+
+
+/*================================================
+Update Element CSS
+=================================================*/
+
+.update-element-box {
+    margin-bottom: 30px;
+    background-color: var(--whiteColor);
+    -webkit-box-shadow: 1px 5px 24px 0 rgba(68, 102, 242, 0.05);
+    box-shadow: 1px 5px 24px 0 rgba(68, 102, 242, 0.05);
+    border-radius: 5px;
+    padding: 0 25px 0 25px;
+    min-height: 100vh
+}
+
+.update-element-box h3 {
+    padding: 20px 25px 19px;
+    border-bottom: 1px dashed #eeeeee;
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    margin-left: -25px;
+    margin-right: -25px;
+}
+
+.update-element-box form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.update-element-box .form-group {
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.update-element-box .form-group label {
+    display: block;
+    margin-bottom: 12px;
+    color: var(--blackColor);
+    position: relative;
+    padding-left: 25px;
+    font-weight: 500;
+}
+
+.update-element-box .form-group label span {
+    color: var(--optionalColor);
+    font-weight: 400;
+}
+
+.update-element-box .form-group .form-control {
+    height: 48px;
+    background: #f9f9f9 !important;
+    -webkit-transition: var(--transition);
+    transition: var(--transition);
+    border-radius: 5px;
+    border: 1px solid #e5e7f2 !important;
+    color: var(--blackColor) !important;
+    font-weight: 400;
+    font-size: var(--fontSize);
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 15px;
+    padding-left: 15px
+}
+
+.update-element-box .form-group .form-control::-webkit-input-placeholder {
+    -webkit-transition: var(--transition);
+    transition: var(--transition);
+    color: #7d93b2;
+}
+
+.update-element-box .form-group .form-control:-ms-input-placeholder {
+    -webkit-transition: var(--transition);
+    transition: var(--transition);
+    color: #7d93b2;
+}
+
+.update-element-box .form-group .form-control::-ms-input-placeholder {
+    -webkit-transition: var(--transition);
+    transition: var(--transition);
+    color: #7d93b2;
+}
+
+.update-element-box .form-group .form-control::placeholder {
+    -webkit-transition: var(--transition);
+    transition: var(--transition);
+    color: #7d93b2;
+}
+
+.update-element-box .form-group .form-control:focus {
+    border-color: var(--mainColor);
+}
+
+.update-element-box .form-group .form-control:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+.update-element-box .form-group .form-control:focus:-ms-input-placeholder {
+    color: transparent;
+}
+
+.update-element-box .form-group .form-control:focus::-ms-input-placeholder {
+    color: transparent;
+}
+
+.update-element-box .form-group .form-control:focus::placeholder {
+    color: transparent;
+}
+
+.update-element-box .form-group textarea.form-control {
+    padding-top: 15px;
+    height: auto;
+}
+
+.update-element-btn {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.update-element-btn button {
+    display: inline-block;
+    background-color: var(--mainColor);
+    color: var(--whiteColor);
+    padding: 12.5px 30px;
+    -webkit-box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+    border-radius: 5px;
+    -webkit-transition: var(--transition);
+    transition: var(--transition);
+    border: none;
+    font-size: var(--fontSize);
+    font-weight: 600;
+    margin: 0px 20px;
+}
+
+.update-element-btn button:hover {
+    background-color: #3b99ca;
+    color: var(--whiteColor);
+}
+
+
+/*================================================
+Navbar CSS
+=================================================*/
+
+.navbar-area {
+    display: flex;
+    flex-direction: row;
+    place-items: center;
+}
+
+.navbar-area .navbar-title {
+    width: 30%;
+    padding-left: 5px;
+}
+
+.navbar-area .navbar {
+    width: 70%;
+    height: 100%
+}
+
+.navbar-area .navbar-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.navbar-area .navbar-list .navbar-item .link {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    border-radius: 0;
+    margin-right: 25px;
+    position: relative;
+    -webkit-transition: var(--transition);
+    transition: var(--transition);
+    color: #666666;
+    font-size: 16px;
+    font-weight: 600;
+    padding-top: 27px;
+    padding-bottom: 20px;
+}
+
+.navbar-area .navbar-list .navbar-item .link:hover {
+    color: var(--mainColor);
+}
